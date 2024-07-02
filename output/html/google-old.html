@@ -1,0 +1,230 @@
+<html>
+  <head> </head>
+
+  <body>
+    <div class="graph-report">
+      <style>
+        .graph-report li {
+          margin: 0.5em 0 0.5em 0;
+        }
+        .graph-report .paragraph {
+          text-align: justify;
+          word-break: break-all;
+        }
+        .graph-report .small-columns {
+          column-count: 4;
+          column-gap: 2em;
+        }
+        .graph-report .medium-columns {
+          column-count: 3;
+          column-gap: 2em;
+        }
+        .graph-report .large-columns {
+          column-count: 2;
+          column-gap: 2em;
+        }
+        .graph-report .single-column {
+        }
+        @media only screen and (max-width: 600px) {
+          .graph-report .small-columns {
+            column-count: 1;
+          }
+          .graph-report .medium-columns {
+            column-count: 1;
+          }
+          .graph-report .large-columns {
+            column-count: 1;
+          }
+        }
+        @media only screen and (min-width: 600px) and (max-width: 800px) {
+          .graph-report .small-columns {
+            column-count: 2;
+          }
+          .graph-report .medium-columns {
+            column-count: 1;
+          }
+          .graph-report .large-columns {
+            column-count: 1;
+          }
+        }
+        @media only screen and (min-width: 800px) and (max-width: 1024px) {
+          .graph-report .small-columns {
+            column-count: 3;
+          }
+          .graph-report .medium-columns {
+            column-count: 2;
+          }
+          .graph-report .large-columns {
+            column-count: 1;
+          }
+        }
+      </style>
+      <p class="paragraph">
+        The directed graph has 875.71K nodes and 5.11M edges. The RAM
+        requirements for the nodes and edges data structures are 61.80MB and
+        27.43MB respectively.
+      </p>
+      <h3 style="margin: 1em 0 0 0">Degree centrality</h3>
+      <p class="paragraph">
+        The minimum node degree is 0, the maximum node degree is 456, the mode
+        degree is 0, the mean degree is 5.83 and the node degree median is 4.
+      </p>
+      <p class="paragraph">
+        The nodes with the highest degree centrality are 506742 (degree 456),
+        305229 (degree 372), 203748 (degree 372), 768091 (degree 330) and 808643
+        (degree 277).
+      </p>
+      <h3 style="margin: 1em 0 0 0">Topological Oddities</h3>
+      <p class="paragraph">
+        A topological oddity is a set of nodes in the graph that
+        <i>may be derived</i> by an error during the generation of the edge list
+        of the graph and, depending on the task, could bias the results of
+        topology-based models. Note that in a directed graph we only support the
+        detection of isomorphic nodes and edges. In the following paragraph, we
+        will describe the detected topological oddities.
+      </p>
+      <h4 style="margin: 1em 0 0 0">Trap nodes</h4>
+      <p class="paragraph">
+        In a directed graph, a trap node is a node that blocks a random walk,
+        having a some inbound edges and no outbound edges. We have detected
+        136.26K trap nodes in the graph, involving a total of 136.26K nodes
+        (15.56%) and 325.73K edges (6.38%). The detected trap nodes are:
+      </p>
+      <ul class="small-columns">
+        <li><p class="paragraph">417728</p></li>
+        <li><p class="paragraph">53051</p></li>
+        <li><p class="paragraph">693969</p></li>
+        <li><p class="paragraph">860525</p></li>
+        <li><p class="paragraph">769429</p></li>
+        <li><p class="paragraph">91681</p></li>
+        <li><p class="paragraph">82098</p></li>
+        <li><p class="paragraph">518248</p></li>
+        <li><p class="paragraph">645048</p></li>
+        <li><p class="paragraph">427986</p></li>
+        <li><p class="paragraph">749671</p></li>
+        <li><p class="paragraph">619985</p></li>
+        <li><p class="paragraph">696574</p></li>
+        <li><p class="paragraph">691579</p></li>
+        <li><p class="paragraph">801318</p></li>
+      </ul>
+      <p class="paragraph">And other 136.24K trap nodes.</p>
+      <h4 style="margin: 1em 0 0 0">Singleton nodes with self-loops</h4>
+      <p class="paragraph">
+        In a directed graph, a trap node with selfloops is a node that traps a
+        random walk, having a some inbound edges and only outbound edges to
+        itself. Therefore, the random walk can continue ad infinitum, but
+        forever trapped in the same node. We have detected 136.26K singleton
+        nodes with self-loops in the graph, involving a total of 136.26K nodes
+        (15.56%). The detected singleton nodes with self-loops are:
+      </p>
+      <ul class="small-columns"></ul>
+      <p class="paragraph">
+        And other 136.24K singleton nodes with self-loops.
+      </p>
+      <h4 style="margin: 1em 0 0 0">Isomorphic node groups</h4>
+      <p class="paragraph">
+        Isomorphic node groups are nodes with exactly the same neighbours, node
+        types, edge types and weights (if present in the graph). Nodes in such
+        groups are topologically indistinguishable, that is swapping their ID
+        would not change the graph topology. We have detected 17.66K isomorphic
+        node groups in the graph, involving a total of 82.69K nodes (9.44%) and
+        1.15M edges (22.44%), with the largest one involving 289 nodes and 2.89K
+        edges. The detected isomorphic node groups, sorted by decreasing size,
+        are:
+      </p>
+      <ol class="medium-columns">
+        <li>
+          <p class="paragraph">
+            Group with 289 nodes (degree 10): 591429, 857482, 642849, 438035,
+            816069 and other 284.
+          </p>
+        </li>
+        <li>
+          <p class="paragraph">
+            Group with 142 nodes (degree 12): 262396, 646538, 189718, 636849,
+            718942 and other 137.
+          </p>
+        </li>
+        <li>
+          <p class="paragraph">
+            Group with 142 nodes (degree 11): 243123, 556236, 663908, 821232,
+            837219 and other 137.
+          </p>
+        </li>
+        <li>
+          <p class="paragraph">
+            Group with 31 nodes (degree 49): 305557, 323945, 700105, 424583,
+            76012 and other 26.
+          </p>
+        </li>
+        <li>
+          <p class="paragraph">
+            Group with 122 nodes (degree 11): 473458, 100426, 878526, 387876,
+            147914 and other 117.
+          </p>
+        </li>
+        <li>
+          <p class="paragraph">
+            Group with 108 nodes (degree 11): 749631, 400503, 602236, 900892,
+            176056 and other 103.
+          </p>
+        </li>
+        <li>
+          <p class="paragraph">
+            Group with 81 nodes (degree 14): 162720, 622190, 832733, 213847,
+            468176 and other 76.
+          </p>
+        </li>
+        <li>
+          <p class="paragraph">
+            Group with 101 nodes (degree 11): 543418, 866467, 356058, 57632,
+            841609 and other 96.
+          </p>
+        </li>
+        <li>
+          <p class="paragraph">
+            Group with 108 nodes (degree 10): 681956, 72370, 73566, 6645, 734095
+            and other 103.
+          </p>
+        </li>
+        <li>
+          <p class="paragraph">
+            Group with 67 nodes (degree 16): 814083, 716489, 486802, 723571,
+            235171 and other 62.
+          </p>
+        </li>
+        <li>
+          <p class="paragraph">
+            Group with 79 nodes (degree 12): 102839, 275333, 41851, 900278,
+            709271 and other 74.
+          </p>
+        </li>
+        <li>
+          <p class="paragraph">
+            Group with 87 nodes (degree 10): 279421, 834661, 307728, 111818,
+            478672 and other 82.
+          </p>
+        </li>
+        <li>
+          <p class="paragraph">
+            Group with 55 nodes (degree 15): 476469, 168994, 373783, 465598,
+            473587 and other 50.
+          </p>
+        </li>
+        <li>
+          <p class="paragraph">
+            Group with 63 nodes (degree 13): 378833, 500622, 707958, 689751,
+            886860 and other 58.
+          </p>
+        </li>
+        <li>
+          <p class="paragraph">
+            Group with 62 nodes (degree 13): 796591, 766035, 708302, 797052,
+            646460 and other 57.
+          </p>
+        </li>
+      </ol>
+      <p class="paragraph">And other 17.64K isomorphic node groups.</p>
+    </div>
+  </body>
+</html>

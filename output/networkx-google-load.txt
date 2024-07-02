@@ -1,0 +1,12 @@
+Library: Networkx
+Dataset: graph-testing-data/google.txt
+Task: LOAD
+  --------------
+  Min:      10.529755457999997
+  Median:   12.155115271
+  Mean:     12.4612943666
+  Stdev:    1.7189653645233856
+  Max:      17.002298666
+  --------------
+  samples:  10
+

@@ -1,0 +1,12 @@
+Library: Grape
+Dataset: graph-testing-data/amazon.txt
+Task: CONNECTED_COMPONENT
+  --------------
+  Min:      0.058799583000000766
+  Median:   0.06115520799999974
+  Mean:     0.06178677069999994
+  Stdev:    0.0035619675094385587
+  Max:      0.0710942499999998
+  --------------
+  samples:  10
+

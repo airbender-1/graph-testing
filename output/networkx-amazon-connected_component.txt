@@ -1,0 +1,12 @@
+Networkx
+Dataset: graph-testing-data/amazon.txt
+Function: CONNECTED_COMPONENT
+  --------------
+  Min:      0.7443640830000007
+  Median:   0.7492376875000004
+  Mean:     0.7511557667000002
+  Stdev:    0.005344559186583031
+  Max:      0.7591568750000004
+  --------------
+  samples:  10
+

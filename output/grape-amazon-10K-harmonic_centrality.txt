@@ -1,0 +1,12 @@
+Library: Grape
+Dataset: graph-testing-data/amazon-10K.txt
+Task: HARMONIC_CENTRALITY
+  --------------
+  Min:      0.02544550000000001
+  Median:   0.02613910400000008
+  Mean:     0.026445608300000024
+  Stdev:    0.0010118575614388612
+  Max:      0.028640042000000143
+  --------------
+  samples:  10
+

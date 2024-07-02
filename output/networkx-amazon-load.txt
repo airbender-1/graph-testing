@@ -1,0 +1,12 @@
+Networkx
+Dataset: graph-testing-data/amazon.txt
+Function: load
+  --------------
+  Min:      1.8979747909999993
+  Median:   1.9156593334999998
+  Mean:     1.9247171456999999
+  Stdev:    0.034911477631251873
+  Max:      2.012906708
+  --------------
+  samples:  10
+

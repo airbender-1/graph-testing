@@ -1,0 +1,51 @@
+Help on class GraphCSVBuilder in module ensmallen:
+
+class GraphCSVBuilder(builtins.object)
+ |  Methods defined here:
+ |  
+ |  __getattribute__(self, name, /)
+ |      Return getattr(self, name).
+ |  
+ |  __hash__(self, /)
+ |      Return hash(self).
+ |  
+ |  __repr__(self, /)
+ |      Return repr(self).
+ |  
+ |  __str__(self, /)
+ |      Return str(self).
+ |  
+ |  add_edge(self, /, src, dst, edge_type, weight)
+ |      Add an edge to the graph
+ |      
+ |      Parameters
+ |      ----------
+ |      src: str
+ |          The name of the source node
+ |      dst: str
+ |          The name of the destination node
+ |      edge_type: Optional[str]
+ |          The name of the edge_type, if present
+ |      weight: Optional[float]
+ |          The weight of the edge, if present
+ |  
+ |  add_node(self, /, name, node_type)
+ |      Add a node to the graph, if the node is already present in the graph it will be overwritten
+ |      
+ |      Parameters
+ |      ----------
+ |      name: str
+ |          The name of the node
+ |      node_type: Optional[List[str]]
+ |          List of node type names, if present
+ |  
+ |  finish(self, /)
+ |      Flush the changes to the files and print the example code on how the
+ |      graph can be loaded using `Graph.from_csv
+ |  
+ |  ----------------------------------------------------------------------
+ |  Static methods defined here:
+ |  
+ |  __new__(*args, **kwargs) from builtins.type
+ |      Create and return a new object.  See help(type) for accurate signature.
+

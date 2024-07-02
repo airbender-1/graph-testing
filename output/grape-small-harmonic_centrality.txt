@@ -1,0 +1,12 @@
+Library: Grape
+Dataset: graph-testing-data/small.txt
+Task: HARMONIC_CENTRALITY
+  --------------
+  Min:      8.958000000003352e-06
+  Median:   1.712500000006223e-05
+  Mean:     0.00012083739999999566
+  Stdev:    0.0003198340105209152
+  Max:      0.0010304160000003115
+  --------------
+  samples:  10
+

@@ -1,0 +1,12 @@
+Library: Grape
+Dataset: graph-testing-data/google.txt
+Task: CONNECTED_COMPONENT
+  --------------
+  Min:      0.20990645800000252
+  Median:   0.22133835450000028
+  Mean:     0.22534132070000013
+  Stdev:    0.013756436808828413
+  Max:      0.24976191600000064
+  --------------
+  samples:  10
+

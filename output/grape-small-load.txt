@@ -1,0 +1,12 @@
+Grape
+Dataset: graph-testing-data/small.txt
+Function: load
+  --------------
+  Min:      0.0001771250000000002
+  Median:   0.00023733300000006174
+  Mean:     0.0011694209000000732
+  Stdev:    0.0029175138946768418
+  Max:      0.009470374999999809
+  --------------
+  samples:  10
+

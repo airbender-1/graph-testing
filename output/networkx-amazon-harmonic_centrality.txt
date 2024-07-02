@@ -1,0 +1,2 @@
+Library: Networkx
+Dataset: graph-testing-data/amazon.txt

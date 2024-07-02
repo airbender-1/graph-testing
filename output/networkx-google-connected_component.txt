@@ -1,0 +1,12 @@
+Library: Networkx
+Dataset: graph-testing-data/google.txt
+Task: CONNECTED_COMPONENT
+  --------------
+  Min:      4.958774957999999
+  Median:   6.6386690625000035
+  Mean:     6.548625054000001
+  Stdev:    0.9751962519142784
+  Max:      8.274701875000002
+  --------------
+  samples:  10
+

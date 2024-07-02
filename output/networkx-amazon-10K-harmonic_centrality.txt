@@ -1,0 +1,12 @@
+Library: Networkx
+Dataset: graph-testing-data/amazon-10K.txt
+Task: HARMONIC_CENTRALITY
+  --------------
+  Min:      4.50177625
+  Median:   4.509068228999998
+  Mean:     4.5377426875
+  Stdev:    0.06832021682616253
+  Max:      4.721607500000001
+  --------------
+  samples:  10
+

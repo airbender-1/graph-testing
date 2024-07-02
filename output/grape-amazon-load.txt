@@ -1,0 +1,12 @@
+Grape
+Dataset: graph-testing-data/amazon.txt
+Function: load
+  --------------
+  Min:      3.326909209
+  Median:   3.4124749375000007
+  Mean:     3.4383998585
+  Stdev:    0.09268634348316375
+  Max:      3.592940834
+  --------------
+  samples:  10
+

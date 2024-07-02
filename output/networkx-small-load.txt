@@ -1,0 +1,12 @@
+Networkx
+Dataset: graph-testing-data/small.txt
+Function: load
+  --------------
+  Min:      3.187500000001453e-05
+  Median:   3.3020999999980316e-05
+  Mean:     7.465000000000111e-05
+  Stdev:    0.00012373717671473276
+  Max:      0.0004264999999999963
+  --------------
+  samples:  10
+

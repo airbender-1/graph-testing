@@ -1,0 +1,12 @@
+Library: Grape
+Dataset: graph-testing-data/google.txt
+Task: LOAD
+  --------------
+  Min:      12.272956749999999
+  Median:   14.863851582999999
+  Mean:     14.501780183400001
+  Stdev:    0.9530995270301682
+  Max:      15.571386750000002
+  --------------
+  samples:  10
+

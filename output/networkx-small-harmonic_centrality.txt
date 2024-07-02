@@ -1,0 +1,12 @@
+Library: Networkx
+Dataset: graph-testing-data/small.txt
+Task: HARMONIC_CENTRALITY
+  --------------
+  Min:      1.5833000000020636e-05
+  Median:   1.6167000000011367e-05
+  Mean:     1.8916800000007283e-05
+  Stdev:    7.843505420974706e-06
+  Max:      4.1125000000002965e-05
+  --------------
+  samples:  10
+

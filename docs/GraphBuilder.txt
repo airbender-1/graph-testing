@@ -1,0 +1,96 @@
+Help on class GraphBuilder in module ensmallen:
+
+class GraphBuilder(builtins.object)
+ |  Methods defined here:
+ |  
+ |  __getattribute__(self, name, /)
+ |      Return getattr(self, name).
+ |  
+ |  __hash__(self, /)
+ |      Return hash(self).
+ |  
+ |  __repr__(self, /)
+ |      Return repr(self).
+ |  
+ |  __str__(self, /)
+ |      Return str(self).
+ |  
+ |  add_edge(self, /, src, dst, edge_type, weight)
+ |      Add an edge to the graph
+ |      
+ |      Parameters
+ |      ----------
+ |      src: str
+ |          The name of the source node
+ |      dst: str
+ |          The name of the destination node
+ |      edge_type: Optional[str]
+ |          The name of the edge_type, if present
+ |      weight: Optional[float]
+ |          The weight of the edge, if present
+ |  
+ |  add_node(self, /, name, node_type)
+ |      Add a node to the graph, if the node is already present in the graph it will be overwritten
+ |      
+ |      Parameters
+ |      ----------
+ |      name: str
+ |          The name of the node
+ |      node_type: Optional[List[str]]
+ |          List of node type names, if present
+ |  
+ |  build(self, /)
+ |      Consume the edges and nodes to create a new graph
+ |  
+ |  remove_edge(self, /, src, dst, edge_type, weight)
+ |      Remove an edge to the graph, if the edge is not present this will do nothing.
+ |      
+ |      Parameters
+ |      ----------
+ |      src: str
+ |          The name of the source node
+ |      dst: str
+ |          The name of the destination node
+ |      edge_type: Optional[str]
+ |          The name of the edge_type, if present
+ |      weight: Optional[float]
+ |          The weight of the edge, if present
+ |  
+ |  remove_node(self, /, name)
+ |      Remove a node from the graph, if the node does not exist, this method does nothing
+ |      
+ |      Parameters
+ |      ----------
+ |      name: str
+ |          The name of the node
+ |  
+ |  set_default_weight(self, /, default_weight)
+ |      Set a default missing weight to be used if only some edges have weights
+ |      
+ |      Parameters
+ |      ----------
+ |      default_weight: float
+ |          set the weight to assign by default at edges
+ |  
+ |  set_directed(self, /, is_directed)
+ |      Set if the graph will be directed or undirected
+ |      
+ |      Parameters
+ |      ----------
+ |      is_directed: bool
+ |          the generated graph will be directed if this is true
+ |  
+ |  set_name(self, /, name)
+ |      Set the name of the graph that will be created
+ |      
+ |      Parameters
+ |      ----------
+ |      name: str
+ |          The name of the graph
+ |  
+ |  ----------------------------------------------------------------------
+ |  Static methods defined here:
+ |  
+ |  __new__(*args, **kwargs) from builtins.type
+ |      Create and return a new object.  See help(type) for accurate signature.
+
